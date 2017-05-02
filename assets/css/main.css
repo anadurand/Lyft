@@ -106,7 +106,7 @@ video{
   border-bottom: 1px solid black;
   height: 50px;
   font-size: 16px;
-  margin: 2% 0;
+  margin: 1% 0;
 }
 .log-in input[type="submit"]{
   background-color: #FF00BF;
@@ -133,7 +133,7 @@ video{
   font-size: 10px;
 }
 #logChange.more{
-  height: 620px;
+  height: 700px;
 }
 .more-log-in{
   display: none;
@@ -213,6 +213,9 @@ footer li{
   margin: 25% 0;
   font-size: 14px;
 }
+footer li a{
+  color: white;
+}
 footer li h3{
   font-size: 18px;
 }
@@ -266,4 +269,22 @@ footer .abajo .copy{
 /*css formulario validacion*/
 .wrong{
   visibility: hidden;
+  display: inline-block;
+  width: 5%;
+  height: 19px;
+  background-image: url("../img/error.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  right: -95%;
+  top: -45px;
+}
+/*hover de los link*/
+footer li a:hover{
+  color: #FF00BF;
+  cursor: pointer;
+}
+footer li h3 a:hover{
+  color: white;
+  text-decoration: underline;
 }
