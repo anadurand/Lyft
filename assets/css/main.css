@@ -76,6 +76,10 @@ header{
 /*css de la portada y formulario*/
 .portada{
   background-color: #76278f;
+
+}
+.portada-log-in, .info{
+  border: none;
 }
 video{
   width: 100%;
@@ -107,6 +111,9 @@ video{
   height: 50px;
   font-size: 16px;
   margin: 1% 0;
+}
+.log-in input[type="text"].red, .log-in input[type="mail"].red{
+  border-bottom: 2px solid red;
 }
 .log-in input[type="submit"]{
   background-color: #FF00BF;

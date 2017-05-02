@@ -1,4 +1,5 @@
 var lastScrollTop = 0;
+//cambiar el estilo del header cuando avanza el scroll
 window.addEventListener("scroll", function(){
    var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
    if (currentScroll > lastScrollTop){
@@ -32,31 +33,44 @@ function validarForm(){
   phoneNumber.addEventListener("blur", function(e){
     if(!phoneNumber.value.match(testPhone)){
       e.target.nextSibling.style.visibility = "visible";
+      e.target.classList.add("red");
     }else{
       e.target.nextSibling.style.visibility = "hidden";
+      e.target.classList.remove("red");
     }
   });
   name.addEventListener("blur", function(e){
     if(!name.value.match(testName)){
       e.target.nextSibling.style.visibility = "visible";
+      e.target.classList.add("red");
+
     }else{
       e.target.nextSibling.style.visibility= "hidden";
+      e.target.classList.remove("red");
+
     }
   });
   city.addEventListener("blur", function(e){
     if(!city.value.match(testName)){
       e.target.nextSibling.style.visibility = "visible";
+      e.target.classList.add("red");
+
     }else{
       e.target.nextSibling.style.visibility= "hidden";
+      e.target.classList.remove("red");
+
     }
   });
   email.addEventListener("blur", function(e){
     if(!email.value.match(testEmail)){
       e.target.nextSibling.style.visibility = "visible";
+      e.target.classList.add("red");
+
     }else{
       e.target.nextSibling.style.visibility= "hidden";
+      e.target.classList.remove("red");
+
     }
   });
-
 
 }
