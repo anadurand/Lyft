@@ -19,6 +19,8 @@ var phoneNumber = document.getElementById("phoneNumber");
 phoneNumber.addEventListener("focus", function(){
   document.getElementById("logChange").classList.add("more");
   document.getElementById("moreLogin").style.display = "block";
+  document.getElementById("portada").style.bottom = "0px";
+
 });
 // para la validacion
 

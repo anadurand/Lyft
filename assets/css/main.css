@@ -5,6 +5,7 @@
 body{
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 a{
   text-decoration: none;
@@ -15,6 +16,9 @@ header{
   position: fixed;
   height: 90px;
   z-index: 9999;
+}
+input:focus{
+    outline: none;
 }
 .logo{
   margin: 2% 7%;
@@ -36,7 +40,7 @@ header{
 .menu li{
   display: inline-block;
   list-style: none;
-  width: 13%;
+  width: 96px;
 }
 .menu li a{
   cursor: pointer;
@@ -73,9 +77,14 @@ header{
   right: -18%;
   top: 15%;
 }
+/*el movimiento de toda la pagina cuando se dezpliega el form*/
+/*.movimiento {
+  position: relative;
+  bottom: 100px;
+}*/
 /*css de la portada y formulario*/
 .portada{
-  background-color: rgba(118, 39, 143, 1);
+  background-color: #660e83;
 }
 .portada-log-in{
   width: 100%;
@@ -148,8 +157,7 @@ video{
 /*css de la informacion*/
 .info{
   color: white;
-  background-color: #76278f;
-  background: linear-gradient(rgba(118, 39, 143, 1), rgba(43, 30, 102, 1));
+  background: linear-gradient(#660e83 , #2B1E66 )
 }
 .info .izquierda{
   display: inline-block;
@@ -219,9 +227,11 @@ footer li{
   list-style: none;
   margin: 25% 0;
   font-size: 14px;
+  cursor: pointer;
 }
 footer li a{
   color: white;
+  cursor: pointer;
 }
 footer li h3{
   font-size: 18px;
